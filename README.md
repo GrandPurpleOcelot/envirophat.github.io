@@ -5,6 +5,8 @@ User: pi
 
 Password: GrandBudapest2014
 
+The following are screenshots for the app in this repo:
+
 ![gif](/screenshots/captured.gif)
 
 ## Introduction
