@@ -10,15 +10,23 @@ The Enviro pHAT from Pimoroni is an add-on board for Raspberry Pi with a set of 
 
 We can stream all of our enviro pHAT data to a Dash web application and have that service turn our data into a nice dashboard that we can access from our laptop or mobile device. This project includes the production of Dash app to displays conditions in your house in real-time, as well as provide statistics for light usage. The Enviro pHat costs \$21, pair with Pizero W \$5-\$10 and required accessories (microSD card and power cables), you have a complete IOT sensor solution for under \$40.
 
+![screenshot3](/screenshots/complete.jpg)
+
 ## Hardware Requirements
 
 1 x Pi Zero W with pre-soldered GPIO . If you want to solder the pin yourself, check out the guide from [Raspberry Website](https://www.raspberrypi.org/blog/getting-started-soldering/).
 
+![screenshot1](/screenshots/pizero.jpg)
+
 1 x [Enviro pHat](https://shop.pimoroni.com/products/enviro-phat)
+
+![screenshot2](/screenshots/envirophat.jpg)
 
 1 x microSD card (recommend at least 16gb)
 
 1 x micro usb cable and 1.5A power supply
+
+1 x  Pi Zero case ([optional](https://shop.pimoroni.com/products/pibow-zero-ver-1-3)). The closed case helps Enviro pHAT from staying directly above the pi's hot CPU that can throw off the temperature sensor.
 
 ## Getting Started
 
