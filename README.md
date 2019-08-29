@@ -78,7 +78,12 @@ On your device, edit /etc/mysql/my.cnf
 
 Find bind-address=127.0.0.1, edit it to bind-address=0.0.0.0
 
-If bind-address=0.0.0.0 does not exist, add one into the my.cnf.
+If bind-address=0.0.0.0 does not exist, add one into the my.cnf:
+
+```sql
+[mysqld]    
+bind-address = 0.0.0.0
+```
 
 Restart MySQL
 
