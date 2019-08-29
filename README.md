@@ -58,19 +58,27 @@ You can find the documentation for the functions in the Enviro pHAT python libra
 ### Install MySQL database:
 
 ```bash
-sudo apt-get install mysql-server
+sudo apt-get install mariadb-server
 sudo apt-get install python-mysqldb
 ```
 
 You can find the tutorial for setup a MySQL database on a Raspberry Pi [here](https://pimylifeup.com/raspberry-pi-mysql/)
 
 **Remote Server Configurations:**
+Grant remote access connection to Mysql:
+
+```sql
+ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+ FLUSH PRIVILEGES;
+ ```
 
 If you want to connect to the Mysql from a remote server, such as another Raspberry Pi or your PC, you will likely get a 111 error: Connection refused. MySQL is bound to localhost by default, and we need to unbind the ip address so we can access MySQL remotely:
 
 On your device, edit /etc/mysql/my.cnf
 
-Find bind-address=127.0.0.1, edit it to bind-address=0.0.0.0, or just remove the line.
+Find bind-address=127.0.0.1, edit it to bind-address=0.0.0.0
+
+If bind-address=0.0.0.0 does not exist, add one into the my.cnf.
 
 Restart MySQL
 
