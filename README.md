@@ -1,9 +1,9 @@
 # IOT Monitor Environment Data with Enviro pHAT for Raspberry Pi
 Visit my dashboard at: https://canescent-cow-0653.dataplicity.io
 
-User: pi
+**Usernanme**: pi
 
-Password: GrandBudapest2014
+**Password**: GrandBudapest2014
 
 The following are screenshots for the app in this repo:
 
